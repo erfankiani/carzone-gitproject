@@ -1,0 +1,29 @@
+virtual envirment intalling note
+
+1. install 
+python(mambe need to refer virsion too) -m venv FileName
+
+2.activate in cmd.
+FileName\Scripts\activate.bat
+
+2-1.activate in gitbash
+ source Filename/Scripts/activate
+
+
+3.deactivate
+decativate
+4. installing package
+after you enter a virtual envirment :
+pip install numpy
+
+
+5- install Flask__app:
+1)
+set FLASK_APP=hello.py
+or
+$env:FLASK_APP = "hello.py"
+
+2)flask db init
+
+3)flask db migrate -m "text"
+4)flask db upgrade
