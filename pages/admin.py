@@ -10,9 +10,9 @@ class TeamAdmin(admin.ModelAdmin):
     def thumbnail(self, object):
         return format_html('<img src="{}" width="40" style="border-radius: 50px;" />'.format(object.photo.url))
 
-    thumbnail.short_description = 'Car Image'
+    thumbnail.short_description = 'photo'
     
-    list_display=('id','first_name','designation','created_date')
+    list_display=('thumbnail','id','first_name','designation','created_date')
     list_display_links=('id','first_name',)
     search_fields=('first_name','last_name','designation',)
     list_filter=('designation',)
